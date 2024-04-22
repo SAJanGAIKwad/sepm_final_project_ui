@@ -17,14 +17,15 @@ $page1 = ($page*16)-16;
 $page1 = 0;
 $page = 1;	
 }
+
+
 ?>
 <head>
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<title>Nightingale Jobs - Employers</title>
+	<title>PCCOE Jobs - Recruiter</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -37,14 +38,8 @@ $page = 1;
     <meta property="og:image:alt" content="Bwire Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="images/ico/favicon.png">
+	<link rel="shortcut icon" href="images/ico/favicon.jpg">
 	
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-	<link rel="shortcut icon" href="images/ico/favicon.png">
-
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -52,7 +47,7 @@ $page = 1;
 	
 	<link rel="stylesheet" href="icons/linearicons/style.css">
 	<link rel="stylesheet" href="icons/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="icons/simple-line-icons/css/simple-line-icons.css">
+	<link rel="stylesheet" href="icons/simple-line-icons/simple-line-icons.html">
 	<link rel="stylesheet" href="icons/ionicons/css/ionicons.css">
 	<link rel="stylesheet" href="icons/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
 	<link rel="stylesheet" href="icons/rivolicons/style.css">
@@ -65,11 +60,12 @@ $page = 1;
 
 	
 </head>
+
   <style>
   
     .autofit2 {
-	height:100px;
-	width:100px;
+	height:63px;
+	width:63px;
     object-fit:cover; 
   }
   
@@ -77,20 +73,16 @@ $page = 1;
 
 <body class="not-transparent-header">
 
-
 	<div class="container-wrapper">
 
-
 		<header id="header">
-
-
 			<nav class="navbar navbar-default navbar-fixed-top navbar-sticky-function">
 
 				<div class="container">
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img src="images/logo.png" alt="Logo" /></a>
+							<a href="./"><img src="images/PCCOE.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
@@ -110,11 +102,11 @@ $page = 1;
 							</li>
 							
 							<li>
-								<a href="employers.php">Employers</a>
+								<a href="job_seeker.php">Job Seeker</a>
 							</li>
 							
 							<li>
-								<a href="employees.php">Employees</a>
+								<a href="recruiter.php">Recruiter</a>
 							</li>
 							
 							<li>
@@ -148,8 +140,6 @@ $page = 1;
 				<div id="slicknav-mobile"></div>
 				
 			</nav>
-
-			
 			<div id="registerModal" class="modal fade login-box-wrapper" tabindex="-1" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
 			
 				<div class="modal-header">
@@ -162,10 +152,10 @@ $page = 1;
 					<div class="row gap-20">
 					
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Employer</a>
+							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Recruiter</a>
 						</div>
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Employee</a>
+							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Seeker</a>
 						</div>
 
 					</div>
@@ -177,108 +167,125 @@ $page = 1;
 				</div>
 				
 			</div>
+
 			
 		</header>
 
-		
+
 		<div class="main-wrapper">
-		
+
 			<div class="breadcrumb-wrapper">
 			
 				<div class="container">
 				
 					<ol class="breadcrumb-list booking-step">
 						<li><a href="./">Home</a></li>
-						<li><span>Employers</span></li>
+						<li><span>Recruiter</span></li>
 					</ol>
 					
 				</div>
 				
 			</div>
-
 			
 			<div class="section sm">
 			
 				<div class="container">
 				
-					<div class="sorting-wrappper alt">
+					<div class="sorting-wrappper">
 			
-						<div class="GridLex-grid-middle">
-						
-							<div class="GridLex-col-3_sm-12_xs-12">
-							
-								<div class="sorting-header">
-									<h3 class="sorting-title">Employers</h3>
-								</div>
-								
-							</div>
-							
-							
+						<div class="sorting-header">
+							<h3 class="sorting-title">Recruiter</h3>
 						</div>
-
+						
+		
 					</div>
 					
-					<div class="company-grid-wrapper top-company-2-wrapper">
-
-						<div class="GridLex-gap-30">
+					<div class="employee-grid-wrapper">
+					
+						<div class="GridLex-gap-15-wrappper">
 						
 							<div class="GridLex-grid-noGutter-equalHeight">
 							<?php
 							require 'constants/db_config.php';
+							
 							try {
                             $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
                             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-	
-                            $stmt = $conn->prepare("SELECT * FROM tbl_users WHERE role = 'employer' ORDER BY first_name LIMIT $page1,16");
+                            $stmt = $conn->prepare("SELECT * FROM tbl_users WHERE role = 'employee' ORDER BY first_name LIMIT $page1,16");
                             $stmt->execute();
                             $result = $stmt->fetchAll();
-
                             foreach($result as $row)
                             {
-		                    $complogo = $row['avatar'];
-							?>
-							<div class="GridLex-col-3_sm-4_xs-6_xss-12">
+								$empavatar = $row['avatar'];
+								?>
+																<div class="GridLex-col-3_sm-4_xs-6_xss-12">
 								
-							<div class="top-company-2">
-							<a target="_blank" href="company.php?ref=<?php echo $row['member_no']; ?>">
-										
-							<div class="image">
-							<?php 
-							if ($complogo == null) {
-							print '<center><img class="autofit2" alt="image"  src="images/blank.png"/></center>';
-							}else{
-							echo '<center><img class="autofit2" alt="image"  src="data:image/jpeg;base64,'.base64_encode($complogo).'"/></center>';	
-							}
-							?>
-		
-							</div>
-											
-							<div class="content">
-							<h5 class="heading text-primary font700"><?php echo $row['first_name'];?></h5>
-							<p class="texting font600"><?php echo $row['title'];?><p>
-							<p class="mata-p clearfix"><span class="text-primary font700">25</span> <span class="font13">Active job post(s)</span> <span class="pull-right icon"><i class="fa fa-long-arrow-right"></i></span></p>
-							</div>
-										
-							</a>
-										
-							</div>
+									<div class="employee-grid-item">
 									
-							</div>
-							<?php
-	
-	                        }
-
-	                        }catch(PDOException $e)
-                             {
-
-                             } ?>
-
+										<div class="action">
+												
+											<div class="row gap-10">
+											
+												<div class="col-xs-6 col-sm-6">
+													<div class="text-left">
+														<button class="btn"><i class="icon-heart"></i></button> 
+													</div>
+												</div>
+												
+												<div class="col-xs-6 col-sm-6">
+													<div class="text-right">
+														<a class="btn text-right" href="employee-detail.html"><i class="icon-action-redo"></i></a> 
+													</div>
+												</div>
+												
+											</div>
+											
+										</div>
+										
+										<a target="_blank" href="employee-detail.php?empid=<?php echo $row['member_no']; ?>" class="clearfix">
+											
+											<div class="image clearfix">
+										    <?php 
+										    if ($empavatar == null) {
+									        print '<center><img class="img-circle autofit2" src="images/default.jpg" alt="image"  /></center>';
+										    }else{
+										    echo '<center><img class="img-circle autofit2" alt="image" src="data:image/jpeg;base64,'.base64_encode($empavatar).'"/></center>';	
+										    }
+										    ?>
+											
 							
 
+											</div>
+											
+											<div class="content">
+											
+												<h4><?php echo $row['first_name'] ?> <?php echo $row['last_name'] ?></h4>
+												<p class="location"><i class="fa fa-map-marker"></i> <?php echo $row['country'] ?></p>
+												
+												<h6 class="text-primary">Education : <?php echo $row['education'] ?></h6>
+												
+                                                <h6 class="text-primary"><?php echo $row['title'] ?></h6>
+												
+											</div>
+										
+										</a>
+										
+									</div>
 								
+								</div>
+								<?php
+ 
+                         	}
 
-								
+					  
+	                        }catch(PDOException $e)
+                            {
+ 
+                            }
+							
+							?>
+	
+							
 							</div>
 						
 						</div>
@@ -296,7 +303,7 @@ $page = 1;
                             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 	
-                            $stmt = $conn->prepare("SELECT * FROM tbl_users WHERE role = 'employer' ORDER BY first_name");
+                            $stmt = $conn->prepare("SELECT * FROM tbl_users WHERE role = 'employee' ORDER BY first_name");
                             $stmt->execute();
                             $result = $stmt->fetchAll();
 
@@ -308,7 +315,7 @@ $page = 1;
 
 	                        }catch(PDOException $e)
                              {
-                      
+    
                              } ?>
 							 
 								<?php
@@ -318,13 +325,13 @@ $page = 1;
 								$prevpage = $page - 1;
 								$nextpage = $page + 1;
 								
-								print '<li class="paging-nav" '; if ($page == "1") { print 'class="disabled"'; } print '><a '; if ($page == "1") { print ''; } else { print 'href="employers.php?page='.$prevpage.'"';} print '><i class="fa fa-chevron-left"></i></a></li>';
+								print '<li class="paging-nav" '; if ($page == "1") { print 'class="disabled"'; } print '><a '; if ($page == "1") { print ''; } else { print 'href="employees.php?page='.$prevpage.'"';} print '><i class="fa fa-chevron-left"></i></a></li>';
 					            for ($b=1;$b<=$records;$b++)
                                  {
                                  
-		                        ?><li  class="paging-nav" ><a <?php if ($b == $page) { print ' style="background-color:#33B6CB; color:white" '; } ?>  href="employers.php?page=<?php echo "$b"; ?>"><?php echo $b." "; ?></a></li><?php
+		                        ?><li  class="paging-nav" ><a <?php if ($b == $page) { print ' style="background-color:#33B6CB; color:white" '; } ?>  href="employees.php?page=<?php echo "$b"; ?>"><?php echo $b." "; ?></a></li><?php
                                  }	
-								 print '<li class="paging-nav"'; if ($page == $records) { print 'class="disabled"'; } print '><a '; if ($page == $records) { print ''; } else { print 'href="employers.php?page='.$nextpage.'"';} print '><i class="fa fa-chevron-right"></i></a></li>';
+								 print '<li class="paging-nav"'; if ($page == $records) { print 'class="disabled"'; } print '><a '; if ($page == $records) { print ''; } else { print 'href="employees.php?page='.$nextpage.'"';} print '><i class="fa fa-chevron-right"></i></a></li>';
 					             }
 
 								
@@ -353,8 +360,8 @@ $page = 1;
 									<div class="col-sm-6 col-md-4">
 									
 										<div class="footer-about-us">
-											<h5 class="footer-title">About Nightingale Jobs</h5>
-											<p>Nightingale Jobs is a job portal, online job management system developed by Nathaniel Nkrumah for his project in february 2018.</p>
+											<h5 class="footer-title">About PCCOE Jobs</h5>
+											<p>PCCOE Jobs is a job portal, online job management system developed by PCCOE IT STUDENTS for his project in April 2024</p>
 										
 										</div>
 
@@ -363,11 +370,11 @@ $page = 1;
 									<div class="col-sm-6 col-md-5 mt-30-xs">
 										<h5 class="footer-title">Quick Links</h5>
 										<ul class="footer-menu clearfix">
-											<li><a href="./">Home</a></li>
-											<li><a href="job-list.php">Job List</a></li>
-											<li><a href="employers.php">Employers</a></li>
-											<li><a href="employees.php">Employees</a></li>
-											<li><a href="contact.php">Contact Us</a></li>
+											<li><a href="../">Home</a></li>
+											<li><a href="../job-list.php">Job List</a></li>
+											<li><a href="../employers.php">Job Seeker</a></li>
+											<li><a href="../employees.php">Recruiter</a></li>
+											<li><a href="../contact.php">Contact Us</a></li>
 											<li><a href="#">Go to top</a></li>
 
 										</ul>
@@ -380,11 +387,11 @@ $page = 1;
 							
 							<div class="col-sm-12 col-md-3 mt-30-sm">
 							
-								<h5 class="footer-title">Nightingale Jobs Contact</h5>
+								<h5 class="footer-title">PCCOE Jobs Contact</h5>
 								
-								<p>Address : Takoradi, School Junction PO.BOX AX40</p>
-								<p>Email : <a href="mailto:nightingale.nath2@gmail.com">nightingale.nath2@gmail.com</a></p>
-								<p>Phone : <a href="tel:+233546607474">+233 546 607 474</a></p>
+								<p>Pimpri Chinchwad College Of Engineering,<br/>Sector -26, Pradhikaran, Nigdi, <br/>Near Akurdi Railway Station, <br/>Pune - 411 044.</p>
+								<p>Email : <a href="mailto:nightingale.nath2@gmail.com">pccoeadmin@gmail.com</a></p>
+								<p>Phone : <a href="tel:+233546607474"> +91 - 8087174347</a></p>
 								
 
 							</div>
@@ -404,14 +411,14 @@ $page = 1;
 						
 							<div class="col-sm-4 col-md-4">
 					
-								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> Nightingale Vision Software</p>
+								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> PCCOE Vision Software</p>
 								
 							</div>
 							
 							<div class="col-sm-4 col-md-4">
 							
 								<ul class="bottom-footer-menu">
-									<li><a >Developed by Nathaniel Nkrumah</a></li>
+									<li><a >Developed by PCCOE IT STUDENTS</a></li>
 								</ul>
 							
 							</div>
@@ -435,7 +442,9 @@ $page = 1;
 		</div>
 
 
-	</div>
+	</div> 
+ 
+ 
 
 <div id="back-to-top">
    <a href="#"><i class="ion-ios-arrow-up"></i></a>

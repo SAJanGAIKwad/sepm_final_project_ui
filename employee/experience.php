@@ -93,7 +93,7 @@ $page = 1;
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="../"><img src="../images/logo.png" alt="Logo" /></a>
+							<a href="../"><img src="../images/PCCOE.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
@@ -113,11 +113,11 @@ $page = 1;
 							</li>
 							
 							<li>
-								<a href="../employers.php">Employers</a>
+								<a href="../job_seeker.php">Employers</a>
 							</li>
 							
 							<li>
-								<a href="../employees.php">Employees</a>
+								<a href="../recruiter.php">Employees</a>
 							</li>
 							
 							<li>

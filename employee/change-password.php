@@ -79,7 +79,7 @@ header("location:../");
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="../"><img src="../images/logo.png" alt="Logo" /></a>
+							<a href="../"><img src="../images/PCCOE.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
@@ -99,11 +99,11 @@ header("location:../");
 							</li>
 							
 							<li>
-								<a href="../employers.php">Employers</a>
+								<a href="../job_seeker.php">Employers</a>
 							</li>
 							
 							<li>
-								<a href="../employees.php">Employees</a>
+								<a href="../recruiter.php">Employees</a>
 							</li>
 							
 							<li>
